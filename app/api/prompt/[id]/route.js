@@ -19,10 +19,11 @@ export const GET = async (req, { params }) => {
 //PATCH
 export const PATCH = async (req, { params }) => {
   const { prompt, tag } = await req.json();
+  const { id } = await params;
   try {
     await connectToDB();
 
-    const existingPrompt = await Prompt.findById(params.id);
+    const existingPrompt = await Prompt.findById(id);
     if (!existingPrompt)
       return new Response("Prompt not found!", { status: 404 });
 
@@ -35,12 +36,14 @@ export const PATCH = async (req, { params }) => {
     return new Response("Failed to update prompt!", { status: 500 });
   }
 };
+
 //DELETE
 export const DELETE = async (req, { params }) => {
+  const { id } = await params;
   try {
     await connectToDB();
 
-    await Prompt.findByIdAndRemove(params.id);
+    await Prompt.findByIdAndDelete(id);
     return new Response("Prompt has been deleted!", { status: 200 });
   } catch (error) {
     return new Response("Failed to delete prompt", { status: 500 });

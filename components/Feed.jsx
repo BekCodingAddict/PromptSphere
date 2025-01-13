@@ -20,6 +20,7 @@ function PromptCartList({ data, handletagClick }) {
 const Feed = () => {
   const [searchText, setSearchText] = useState("");
   const [posts, setPosts] = useState([]);
+
   const handleSearchChange = (e) => {};
 
   useEffect(() => {
