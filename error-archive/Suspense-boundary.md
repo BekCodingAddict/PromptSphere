@@ -1,12 +1,10 @@
 ## ERROR: Missing Suspense boundary with useSearchParams
 
-> [!DANGER]
+> [!WARNING]
 >
 > ### Error text:
 >
-> useSearchParams() should be wrapped in a suspense boundary at page "/update-prompt". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
-
-    at a (/vercel/path0/.next/server/chunks/779.js:1:26285)
+> useSearchParams() should be wrapped in a suspense boundary at page "/update-prompt". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout at a (/vercel/path0/.next/server/chunks/779.js:1:26285)
 
 ### Why This Error Occurred
 
