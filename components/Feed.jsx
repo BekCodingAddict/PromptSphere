@@ -41,7 +41,7 @@ const Feed = () => {
 
     setTimeout(() => {
       fetchPosts();
-    }, 1000);
+    }, 500);
   }, [searchText]);
 
   useEffect(() => {
