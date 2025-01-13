@@ -42,12 +42,15 @@
 - Creating Reusable component and code
 - Next-Auth Authentication and session controlling
 
-### Creating and using Lambda function
+### Spesifically: Creating and using Lambda function
 
 I have learned during this project declare and using javascript lambda function. I used it lambda function to connect my app to Mongodb.
 
 This is my mongodb connection logic:
 
+<details>
+<summary><code>database.js</code></summary>
+  
 ```js
 import mongoose from "mongoose";
 
@@ -75,9 +78,13 @@ export const connectToDB = async () => {
   }
 };
 ```
+</details>
 
 This is my api route in next.js app . You can see here connectToDB() fuunction is connect and do task and after that it do not keep running.
 
+<details>
+<summary><code>route.js</code></summary>
+  
 ```js
 import Prompt from "@models/prompt";
 import { connectToDB } from "@utils/database";
@@ -98,6 +105,7 @@ export const POST = async (req) => {
   }
 };
 ```
+</details>
 
 ## Problems & Challanges
 | Error & Problem Title | Status | Difficult | Date |
