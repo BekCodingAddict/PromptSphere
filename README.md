@@ -37,7 +37,10 @@
 
 - Backend management for reviewing and moderating user-generated prompts.
 
-## What I learned :
+## What I learned 📚:
+- Create API endpoing using Next.js and How to comunicate Front-end with back-end using HTTP Methods(GET,PUT,PATCH,POST,DELETE etc.)
+- Creating Reusable component and code
+- Next-Auth Authentication and session controlling
 
 ### Creating and using Lambda function
 
@@ -95,3 +98,11 @@ export const POST = async (req) => {
   }
 };
 ```
+
+## Problems & Challanges
+| Error & Problem Title | Status | Difficult | Date |
+|--|--|--|--|
+|[🔄 params should be awaited ](https://github.com/BekCodingAddict/PromptSphere/blob/master/error-archive/params-should-be-awaited.md) | ![solved](https://img.shields.io/badge/solved-blue) | low | Jan 14, 2025 |
+|[🔄 Missing Suspense boundary ](https://github.com/BekCodingAddict/PromptSphere/blob/master/error-archive/Suspense-boundary.md) | ![solved](https://img.shields.io/badge/solved-blue) | low | Jan 14, 2025 |
+|[🖼️ Cannot use import statement outside a module](https://github.com/BekCodingAddict/PromptSphere/blob/master/error-archive/SyntaxError.md) | ![solved](https://img.shields.io/badge/solved-blue) | low | Jan 12, 2025 |
+|[🗑️  Module exports error](https://github.com/BekCodingAddict/PromptSphere/blob/master/error-archive/module.exports-error.md) | ![solved](https://img.shields.io/badge/solved-blue) | low | Jan 13, 2025 |
